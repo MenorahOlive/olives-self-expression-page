@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Kawaii;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/kinder-child-kawaii-bubble-font/KinderChildKawaiiBubble-WpnAz.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: Super Adorable;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/super-adorable-font/SuperAdorable-MAvyp.ttf")
+    format("truetype");
+}
+
+@theme {
+  --font-kawaii-bubble: "Kawaii", sans-serif;
+  --font-super-adorable: "Super Adorable", sans-serif;
+  --color-pastel-petal: #ffcfe2;
+  --color-burgandy: #860021;
+  --color-pale-amber: #cdd98d;
+  --color-blazing-flame: #f43f0a;
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+  }
+}
