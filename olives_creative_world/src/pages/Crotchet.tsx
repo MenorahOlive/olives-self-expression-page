@@ -12,6 +12,7 @@ import image106 from "../assets/crotchet/106.png";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
+import EndNote from "../components/EndNote";
 
 const images = [
   { src: image3, alt: "" },
@@ -37,8 +38,8 @@ const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
 
 const Crotchet = () => {
   return (
-    <>
-      <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble text-2xl p-5 md:p-10 overflow-y-scroll">
+    <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble   overflow-y-scroll">
+      <div className="p-5 md:p-10 text-2xl">
         <div className="flex  flex-col md:flex-row justify-between">
           {" "}
           <NavLink to="/">
@@ -67,8 +68,10 @@ const Crotchet = () => {
             <DisplayImages key={index} src={img.src} alt={img.alt} />
           ))}
         </div>
-      </section>
-    </>
+      </div>
+
+      <EndNote />
+    </section>
   );
 };
 
