@@ -9,6 +9,9 @@ import image31 from "../assets/crotchet/31.png";
 import image34 from "../assets/crotchet/34.png";
 import image54 from "../assets/crotchet/54.png";
 import image106 from "../assets/crotchet/106.png";
+import { CircleArrowLeft } from "lucide-react";
+import Star2 from "../assets/star-2.svg";
+import { NavLink } from "react-router";
 
 const images = [
   { src: image3, alt: "" },
@@ -36,9 +39,29 @@ const Crotchet = () => {
   return (
     <>
       <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble text-2xl p-5 md:p-10 overflow-y-scroll">
-        <h1 className=" text-6xl flex flex-row justify-center items-center mb-5">
-          Crotchet
-        </h1>
+        <div className="flex  flex-col md:flex-row justify-between">
+          {" "}
+          <NavLink to="/">
+            <CircleArrowLeft className="size-10 hover:scale-105 transition duration-200 cursor-pointer ease-in-out mb-5" />
+          </NavLink>
+          <div className="flex flex-row justify-center items-center mb-5">
+            <img
+              src={Star2}
+              width={100}
+              alt=""
+              className="animate-wiggle rotate-90 w-16 md:w-20"
+            />
+            <h1 className="text-5xl md:text-6xl ">Crotchet</h1>
+            <img
+              src={Star2}
+              width={100}
+              alt=""
+              className="animate-wiggle w-16 md:w-20"
+            />
+          </div>
+          <div className="w-5"></div>
+        </div>
+
         <div className="flex flex-row flex-wrap items-center justify-center ">
           {images.map((img, index) => (
             <DisplayImages key={index} src={img.src} alt={img.alt} />
