@@ -1,33 +1,38 @@
-import image15 from "../assets/teaching/15.png";
-import image61 from "../assets/teaching/61.png";
-import image62 from "../assets/teaching/62.png";
-import image65 from "../assets/teaching/65.png";
-import image66 from "../assets/teaching/66.png";
-import image67 from "../assets/teaching/67.png";
-import image68 from "../assets/teaching/68.png";
-import image71 from "../assets/teaching/71.png";
-import image79 from "../assets/teaching/79.png";
+import image15 from "../assets/teaching/15.webp";
+import image61 from "../assets/teaching/61.webp";
+import image62 from "../assets/teaching/62.webp";
+import image65 from "../assets/teaching/65.webp";
+import image66 from "../assets/teaching/66.webp";
+import image67 from "../assets/teaching/67.webp";
+import image68 from "../assets/teaching/68.webp";
+import image71 from "../assets/teaching/71.webp";
+import image79 from "../assets/teaching/79.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image65, alt: "" },
-  { src: image15, alt: "" },
-  { src: image61, alt: "" },
-  { src: image62, alt: "" },
-  { src: image66, alt: "" },
-  { src: image67, alt: "" },
-  { src: image68, alt: "" },
-  { src: image71, alt: "" },
-  { src: image79, alt: "" },
+  { src: image65, alt: "Greetings Chart" },
+  { src: image15, alt: "Children's Home Visit" },
+  { src: image61, alt: "Drawing Tutorial" },
+  { src: image62, alt: "Shading Tutorial" },
+  { src: image66, alt: "Present Tense Chart" },
+  { src: image67, alt: "Past Tense Chart" },
+  { src: image68, alt: "Future Tense Chart" },
+  { src: image71, alt: "Farewell Letters (6 Blue)" },
+  { src: image79, alt: "Art Club Awards" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

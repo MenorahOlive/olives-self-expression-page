@@ -1,19 +1,24 @@
-import image1 from "../assets/STEM/1.png";
-import image27 from "../assets/STEM/27.png";
+import image1 from "../assets/STEM/1.webp";
+import image27 from "../assets/STEM/27.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image1, alt: "" },
-  { src: image27, alt: "" },
+  { src: image1, alt: "Dosimeter Project" },
+  { src: image27, alt: "IOT-enabled wheelchair" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className=" -translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

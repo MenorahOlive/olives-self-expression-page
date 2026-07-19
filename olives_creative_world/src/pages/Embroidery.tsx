@@ -1,23 +1,28 @@
-import image6 from "../assets/embroidery/6.png";
-import image7 from "../assets/embroidery/7.png";
-import image8 from "../assets/embroidery/8.png";
-import image83 from "../assets/embroidery/83.png";
+import image6 from "../assets/embroidery/6.webp";
+import image7 from "../assets/embroidery/7.webp";
+import image8 from "../assets/embroidery/8.webp";
+import image83 from "../assets/embroidery/83.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image6, alt: "" },
-  { src: image7, alt: "" },
-  { src: image8, alt: "" },
-  { src: image83, alt: "" },
+  { src: image6, alt: "Rose Garden" },
+  { src: image7, alt: "Spring in Bloom" },
+  { src: image8, alt: "Stitching Process" },
+  { src: image83, alt: "Final Product" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

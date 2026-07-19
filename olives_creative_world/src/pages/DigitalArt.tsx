@@ -1,57 +1,62 @@
-import image2 from "../assets/digital-art/2.png";
-import image37 from "../assets/digital-art/37.png";
-import image38 from "../assets/digital-art/38.png";
-import image39 from "../assets/digital-art/39.png";
-import image40 from "../assets/digital-art/40.png";
-import image41 from "../assets/digital-art/41.png";
-import image42 from "../assets/digital-art/42.png";
-import image43 from "../assets/digital-art/43.png";
-import image44 from "../assets/digital-art/44.png";
-import image45 from "../assets/digital-art/45.png";
-import image46 from "../assets/digital-art/46.png";
-import image47 from "../assets/digital-art/47.png";
-import image48 from "../assets/digital-art/48.png";
-import image49 from "../assets/digital-art/49.png";
-import image50 from "../assets/digital-art/50.png";
-import image51 from "../assets/digital-art/51.png";
-import image52 from "../assets/digital-art/52.png";
-import image53 from "../assets/digital-art/53.png";
-import image98 from "../assets/digital-art/98.png";
-import image99 from "../assets/digital-art/99.png";
-import image100 from "../assets/digital-art/100.png";
+import image2 from "../assets/digital-art/2.webp";
+import image37 from "../assets/digital-art/37.webp";
+import image38 from "../assets/digital-art/38.webp";
+import image39 from "../assets/digital-art/39.webp";
+import image40 from "../assets/digital-art/40.webp";
+import image41 from "../assets/digital-art/41.webp";
+import image42 from "../assets/digital-art/42.webp";
+import image43 from "../assets/digital-art/43.webp";
+import image44 from "../assets/digital-art/44.webp";
+import image45 from "../assets/digital-art/45.webp";
+import image46 from "../assets/digital-art/46.webp";
+import image47 from "../assets/digital-art/47.webp";
+import image48 from "../assets/digital-art/48.webp";
+import image49 from "../assets/digital-art/49.webp";
+import image50 from "../assets/digital-art/50.webp";
+import image51 from "../assets/digital-art/51.webp";
+import image52 from "../assets/digital-art/52.webp";
+import image53 from "../assets/digital-art/53.webp";
+import image98 from "../assets/digital-art/98.webp";
+import image99 from "../assets/digital-art/99.webp";
+import image100 from "../assets/digital-art/100.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image2, alt: "" },
-  { src: image98, alt: "" },
-  { src: image38, alt: "" },
-  { src: image39, alt: "" },
-  { src: image43, alt: "" },
-  { src: image44, alt: "" },
-  { src: image53, alt: "" },
-  { src: image45, alt: "" },
-  { src: image99, alt: "" },
-  { src: image40, alt: "" },
-  { src: image46, alt: "" },
-  { src: image47, alt: "" },
-  { src: image48, alt: "" },
-  { src: image49, alt: "" },
-  { src: image50, alt: "" },
-  { src: image51, alt: "" },
-  { src: image52, alt: "" },
-  { src: image42, alt: "" },
-  { src: image37, alt: "" },
-  { src: image41, alt: "" },
-  { src: image100, alt: "" },
+  { src: image2, alt: "My #1" },
+  { src: image98, alt: "Study in Hair" },
+  { src: image38, alt: "Khalid" },
+  { src: image39, alt: "Study in Fabric" },
+  { src: image43, alt: "Self Portrait 2022" },
+  { src: image44, alt: "Mary Keni" },
+  { src: image53, alt: "Lynn Muchiri" },
+  { src: image45, alt: "Portraiture Practice" },
+  { src: image99, alt: "Portraiture Practice" },
+  { src: image40, alt: "Halo" },
+  { src: image46, alt: "Study in Hair" },
+  { src: image47, alt: "Space Man" },
+  { src: image48, alt: "Early Days" },
+  { src: image49, alt: "Sketching" },
+  { src: image50, alt: "First Piece" },
+  { src: image51, alt: "Early Days" },
+  { src: image52, alt: "Study in Hair" },
+  { src: image42, alt: "Head in the Clouds" },
+  { src: image37, alt: "Early Days" },
+  { src: image41, alt: "The Bride" },
+  { src: image100, alt: "Galaxy" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

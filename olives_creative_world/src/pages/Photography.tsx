@@ -1,31 +1,36 @@
-import image84 from "../assets/photography/84.png";
-import image85 from "../assets/photography/85.png";
-import image86 from "../assets/photography/86.png";
-import image87 from "../assets/photography/87.png";
-import image88 from "../assets/photography/88.png";
-import image89 from "../assets/photography/89.png";
-import image90 from "../assets/photography/90.png";
-import image91 from "../assets/photography/91.png";
+import image84 from "../assets/photography/84.webp";
+import image85 from "../assets/photography/85.webp";
+import image86 from "../assets/photography/86.webp";
+import image87 from "../assets/photography/87.webp";
+import image88 from "../assets/photography/88.webp";
+import image89 from "../assets/photography/89.webp";
+import image90 from "../assets/photography/90.webp";
+import image91 from "../assets/photography/91.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image84, alt: "" },
-  { src: image85, alt: "" },
-  { src: image86, alt: "" },
-  { src: image87, alt: "" },
-  { src: image88, alt: "" },
-  { src: image89, alt: "" },
-  { src: image90, alt: "" },
-  { src: image91, alt: "" },
+  { src: image84, alt: "Tundu Cat" },
+  { src: image85, alt: "Sinatra" },
+  { src: image86, alt: "Fadhumo" },
+  { src: image87, alt: "Timmy" },
+  { src: image88, alt: "Tundu Cat x Treat " },
+  { src: image89, alt: "Tundu Once Again" },
+  { src: image90, alt: "Tuluz" },
+  { src: image91, alt: "KSPCA Visit" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

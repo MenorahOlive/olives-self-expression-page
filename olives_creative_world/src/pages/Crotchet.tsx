@@ -1,37 +1,42 @@
-import image3 from "../assets/crotchet/3.png";
-import image4 from "../assets/crotchet/4.png";
-import image5 from "../assets/crotchet/5.png";
-import image22 from "../assets/crotchet/22.png";
-import image23 from "../assets/crotchet/23.png";
-import image26 from "../assets/crotchet/26.png";
-import image28 from "../assets/crotchet/28.png";
-import image31 from "../assets/crotchet/31.png";
-import image34 from "../assets/crotchet/34.png";
-import image54 from "../assets/crotchet/54.png";
-import image106 from "../assets/crotchet/106.png";
+import image3 from "../assets/crotchet/3.webp";
+import image4 from "../assets/crotchet/4.webp";
+import image5 from "../assets/crotchet/5.webp";
+import image22 from "../assets/crotchet/22.webp";
+import image23 from "../assets/crotchet/23.webp";
+import image26 from "../assets/crotchet/26.webp";
+import image28 from "../assets/crotchet/28.webp";
+import image31 from "../assets/crotchet/31.webp";
+import image34 from "../assets/crotchet/34.webp";
+import image54 from "../assets/crotchet/54.webp";
+import image106 from "../assets/crotchet/106.webp";
 import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
 
 const images = [
-  { src: image3, alt: "" },
-  { src: image4, alt: "" },
-  { src: image5, alt: "" },
-  { src: image22, alt: "" },
-  { src: image23, alt: "" },
-  { src: image26, alt: "" },
-  { src: image28, alt: "" },
-  { src: image31, alt: "" },
-  { src: image34, alt: "" },
-  { src: image54, alt: "" },
-  { src: image106, alt: "" },
+  { src: image3, alt: "Charger Cable " },
+  { src: image4, alt: "Frog Hat" },
+  { src: image5, alt: "Plant Display" },
+  { src: image22, alt: "Coaster Bouquet" },
+  { src: image23, alt: "Kitty the Pooh" },
+  { src: image26, alt: "Flower Bouquet" },
+  { src: image28, alt: "Birthday Love" },
+  { src: image31, alt: "Jewellery Holder" },
+  { src: image34, alt: "Cozy Beanie " },
+  { src: image54, alt: "Granny Square Tote" },
+  { src: image106, alt: "Ribbon Pencil Pouch" },
 ];
 
 const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
-      <img src={src} alt={alt} width={350} />
+      <div className="flex flex-col gap-2 ">
+        <img src={src} alt={alt} width={350} />
+        <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
+          {alt}
+        </p>
+      </div>
     </>
   );
 };

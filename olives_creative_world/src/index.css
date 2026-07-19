@@ -16,9 +16,17 @@
     format("truetype");
 }
 
+@font-face {
+  font-family: Hangyaboly;
+  font-style: normal;
+  font-display: swap;
+  src: url("./fonts/hangyaboly.regular.ttf") format("truetype");
+}
+
 @theme {
   --font-kawaii-bubble: "Kawaii", sans-serif;
   --font-super-adorable: "Super Adorable", sans-serif;
+  --font-hangyaboly: "Hangyaboly", sans-serif;
   --color-pastel-petal: #ffcfe2;
   --color-burgandy: #860021;
   --color-pale-amber: #cdd98d;
