@@ -1,6 +1,5 @@
 import Avatar from "../assets/avatar.svg";
 import Wiliv from "../assets/profile.svg";
-import Star from "../assets/star.svg";
 import Star2 from "../assets/star-2.svg";
 import Folder from "../assets/folder.svg";
 import { NavLink } from "react-router";
@@ -16,7 +15,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-row">
           <img
-            src={Star}
+            src={Star2}
             width={100}
             alt=""
             className="animate-wiggle rotate-90 w-20 md:w-28"
