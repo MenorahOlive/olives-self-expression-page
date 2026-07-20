@@ -2,6 +2,7 @@ import Avatar from "../assets/avatar.svg";
 import Wiliv from "../assets/profile.svg";
 import Star from "../assets/star.svg";
 import Star2 from "../assets/star-2.svg";
+import Folder from "../assets/folder.svg";
 import { NavLink } from "react-router";
 
 const Hero = () => {
@@ -40,43 +41,43 @@ const Hero = () => {
         <NavLink to="/digital-art">
           {" "}
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out ">
-            <p className="text-7xl ">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Digital Art</p>
           </div>
         </NavLink>
         <NavLink to="/physical-art">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Physical Art</p>
           </div>
         </NavLink>
         <NavLink to="/crotchet">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Crotchet</p>
           </div>
         </NavLink>
         <NavLink to="/embroidery">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Embroidery</p>
           </div>
         </NavLink>
         <NavLink to="/stem">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>STEM</p>
           </div>
         </NavLink>
         <NavLink to="/teaching">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Teaching</p>
           </div>
         </NavLink>
         <NavLink to="/photography">
           <div className="flex items-center justify-center flex-col hover:scale-105 transition duration-200 cursor-pointer ease-in-out">
-            <p className="text-7xl">📁 </p>
+            <img src={Folder} width={70} alt="Folder" />
             <p>Photography</p>
           </div>
         </NavLink>

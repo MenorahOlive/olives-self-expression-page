@@ -18,7 +18,7 @@ const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
       <div className="flex flex-col gap-2 ">
-        <img src={src} alt={alt} width={350} />
+        <img src={src} alt={alt} width={350} loading="lazy" />
         <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
           {alt}
         </p>
