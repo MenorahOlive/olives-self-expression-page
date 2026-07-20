@@ -44,7 +44,7 @@ const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
 const Crotchet = () => {
   return (
     <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble   overflow-y-scroll">
-      <div className="p-5 md:p-10 text-2xl">
+      <div className="p-5 md:p-10 text-2xl min-h-screen">
         <div className="flex  flex-col md:flex-row justify-between">
           {" "}
           <NavLink to="/">

@@ -6,7 +6,7 @@ import { NavLink } from "react-router";
 
 const Hero = () => {
   return (
-    <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble text-2xl p-5 md:p-10  overflow-x-hidden flex flex-col items-center justify-center">
+    <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble text-2xl p-5 md:p-10  overflow-x-hidden flex flex-col items-center justify-center min-h-screen">
       <div className="flex flex-col items-center  justify-center">
         {" "}
         <p className="font-super-adorable text-6xl flex flex-row justify-center items-center">

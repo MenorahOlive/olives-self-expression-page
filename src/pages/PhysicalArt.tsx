@@ -87,7 +87,7 @@ const PhysicalArt = () => {
   return (
     <>
       <section className="bg-pastel-petal text-burgandy h-full md:h-screen w-full font-kawaii-bubble  overflow-y-scroll">
-        <div className="text-2xl p-5 md:p-10">
+        <div className="text-2xl p-5 md:p-10 min-h-screen">
           <div className="flex  flex-col md:flex-row justify-between">
             {" "}
             <NavLink to="/">
