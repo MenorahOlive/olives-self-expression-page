@@ -10,6 +10,8 @@ import { CircleArrowLeft } from "lucide-react";
 import Star2 from "../assets/star-2.svg";
 import { NavLink } from "react-router";
 import EndNote from "../components/EndNote";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const images = [
   { src: image84, alt: "Tundu Cat" },
@@ -26,7 +28,7 @@ const DisplayImages = ({ src, alt }: { src: any; alt: string }) => {
   return (
     <>
       <div className="flex flex-col gap-2 ">
-        <img src={src} alt={alt} width={350} loading="eager" />
+        <img src={src || <Skeleton count={10} />} alt={alt} width={350} />
         <p className="-translate-y-18 font-hangyaboly text-center h-auto w-auto ">
           {alt}
         </p>
